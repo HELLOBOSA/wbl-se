@@ -233,11 +233,11 @@
     }
     .gallery-marquee::before{left:0;background:linear-gradient(to right,var(--bg),transparent)}
     .gallery-marquee::after{right:0;background:linear-gradient(to left,var(--bg),transparent)}
-    .marquee-track{display:flex;gap:3px;animation:marqueeSroll 38s linear infinite;width:max-content}
+    .marquee-track{display:flex;gap:4px;animation:marqueeSroll 55s linear infinite;width:max-content}
     .gallery-marquee:hover .marquee-track{animation-play-state:paused}
     @keyframes marqueeSroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-    .marquee-item{flex-shrink:0;width:360px;height:260px;position:relative;overflow:hidden}
-    @media(max-width:640px){.marquee-item{width:260px;height:190px}}
+    .marquee-item{flex-shrink:0;width:560px;height:400px;position:relative;overflow:hidden}
+    @media(max-width:640px){.marquee-item{width:320px;height:230px}}
     .marquee-item img{width:100%;height:100%;object-fit:cover;filter:grayscale(25%);transition:filter .5s,transform .8s}
     .marquee-item:hover img{filter:grayscale(0);transform:scale(1.04)}
     .marquee-label{
@@ -376,7 +376,7 @@
     <h1 class="hero-h1" id="hero-h1"></h1>
     <div class="hero-rule"></div>
     <div class="hero-credentials" data-sv="SAR/MSA Registrerad · WELL AP Certifierad · 20+ års erfarenhet" data-en="SAR/MSA Registered · WELL AP Certified · 20+ years of experience">SAR/MSA Registrerad · WELL AP Certifierad · 20+ års erfarenhet</div>
-    <p class="hero-lead" data-sv="Vi arbetar med bostäder, kommersiella projekt och stadsplanering med samma metodiska precision som byggde Sveriges mest ambitiösa bostadsprojekt." data-en="We work with homes, commercial projects, and urban planning with the same methodical precision behind some of Sweden's most ambitious residential projects.">Vi arbetar med bostäder, kommersiella projekt och stadsplanering med samma metodiska precision som byggde Sveriges mest ambitiösa bostadsprojekt.</p>
+    <p class="hero-lead" data-sv="Arkitektur, interiör och stadsplanering med nordisk precision. Bostäder, kommersiella rum och publika miljöer i Sverige, Spanien och Grekland." data-en="Architecture, interiors and urban design with Nordic precision. Residential, commercial and public projects across Sweden, Spain and Greece.">Arkitektur, interiör och stadsplanering med nordisk precision. Bostäder, kommersiella rum och publika miljöer i Sverige, Spanien och Grekland.</p>
     <div class="hero-actions">
       <a href="#kontakt" class="btn-outline" onclick="ss(event,'kontakt')" data-sv="BOKA KOSTNADSFRITT SAMTAL" data-en="BOOK A FREE CALL">BOKA KOSTNADSFRITT SAMTAL</a>
       <a href="#projekt" class="text-link" onclick="ss(event,'projekt')">
@@ -509,67 +509,91 @@
     <!-- Stacked / Grid view -->
     <div id="gallery-stacked" class="gallery-stacked">
       <div class="gal-item">
-        <img src="images/norrsken.jpg" alt="Norrsken" loading="lazy">
+        <img src="images/boadilla.jpg" alt="Casa Boadilla" loading="lazy">
         <div class="gal-overlay">
-          <div class="gal-num">N° 01 / 08</div>
-          <div class="gal-title">NORRSKEN</div>
-          <div class="gal-cat" data-sv="Bostadsinteriör" data-en="Residential Interiors">Bostadsinteriör</div>
+          <div class="gal-num">N° 01 / 11</div>
+          <div class="gal-title">CASA BOADILLA</div>
+          <div class="gal-cat" data-sv="Bostad · Arkitektur · Interiör · Landskap" data-en="Residential · Architecture · Interiors · Landscape">Bostad · Arkitektur · Interiör · Landskap</div>
         </div>
       </div>
       <div class="gal-item">
-        <img src="images/horizon.jpg" alt="Horizon" loading="lazy">
+        <img src="images/horizon.jpg" alt="Horizon House" loading="lazy">
         <div class="gal-overlay">
-          <div class="gal-num">N° 02 / 08</div>
-          <div class="gal-title">HORIZON</div>
-          <div class="gal-cat" data-sv="Arkitektur & Landskap" data-en="Architecture & Landscape">Arkitektur & Landskap</div>
+          <div class="gal-num">N° 02 / 11</div>
+          <div class="gal-title">HORIZON HOUSE</div>
+          <div class="gal-cat" data-sv="Bostad · Arkitektur · Interiör" data-en="Residential · Architecture · Interiors">Bostad · Arkitektur · Interiör</div>
         </div>
       </div>
       <div class="gal-item">
-        <img src="images/axis.jpg" alt="Axis" loading="lazy">
+        <img src="images/norrsken.jpg" alt="Norrsken Office" loading="lazy">
         <div class="gal-overlay">
-          <div class="gal-num">N° 03 / 08</div>
-          <div class="gal-title">AXIS</div>
-          <div class="gal-cat" data-sv="Kommersiell interiör" data-en="Commercial Interiors">Kommersiell interiör</div>
+          <div class="gal-num">N° 03 / 11</div>
+          <div class="gal-title">NORRSKEN OFFICE</div>
+          <div class="gal-cat" data-sv="Kommersiell · Arbetsplats · Interiör" data-en="Commercial · Workplace · Interiors">Kommersiell · Arbetsplats · Interiör</div>
         </div>
       </div>
       <div class="gal-item">
-        <img src="images/k38.jpg" alt="K38" loading="lazy">
+        <img src="images/selva.jpg" alt="Selva Hotel" loading="lazy">
         <div class="gal-overlay">
-          <div class="gal-num">N° 04 / 08</div>
-          <div class="gal-title">K38</div>
-          <div class="gal-cat" data-sv="Totalrenovering" data-en="Full Renovation">Totalrenovering</div>
-        </div>
-      </div>
-      <div class="gal-item">
-        <img src="images/k12.jpg" alt="K12 Airbnb" loading="lazy">
-        <div class="gal-overlay">
-          <div class="gal-num">N° 05 / 08</div>
-          <div class="gal-title">K12</div>
-          <div class="gal-cat" data-sv="Korttidsuthyrning" data-en="Short-term Rental">Korttidsuthyrning</div>
-        </div>
-      </div>
-      <div class="gal-item">
-        <img src="images/boadilla.jpg" alt="Boadilla" loading="lazy">
-        <div class="gal-overlay">
-          <div class="gal-num">N° 06 / 08</div>
-          <div class="gal-title">BOADILLA</div>
-          <div class="gal-cat" data-sv="Bostadsvilla" data-en="Residential Villa">Bostadsvilla</div>
+          <div class="gal-num">N° 04 / 11</div>
+          <div class="gal-title">SELVA HOTEL</div>
+          <div class="gal-cat" data-sv="Hospitality · Interiör · Landskap" data-en="Hospitality · Interiors · Landscape">Hospitality · Interiör · Landskap</div>
         </div>
       </div>
       <div class="gal-item">
         <img src="images/granolita.jpg" alt="Granolita" loading="lazy">
         <div class="gal-overlay">
-          <div class="gal-num">N° 07 / 08</div>
+          <div class="gal-num">N° 05 / 11</div>
           <div class="gal-title">GRANOLITA</div>
-          <div class="gal-cat" data-sv="Renovering & Interiör" data-en="Renovation & Interiors">Renovering & Interiör</div>
+          <div class="gal-cat" data-sv="Hospitality · Kommersiell · Interiör" data-en="Hospitality · Commercial · Interiors">Hospitality · Kommersiell · Interiör</div>
+        </div>
+      </div>
+      <div class="gal-item">
+        <img src="images/axis.jpg" alt="Distrito Axis" loading="lazy">
+        <div class="gal-overlay">
+          <div class="gal-num">N° 06 / 11</div>
+          <div class="gal-title">DISTRITO AXIS</div>
+          <div class="gal-cat" data-sv="Kommersiell · Arkitektur · Stadsplanering" data-en="Commercial · Architecture · Urban Design">Kommersiell · Arkitektur · Stadsplanering</div>
+        </div>
+      </div>
+      <div class="gal-item">
+        <img src="images/k38.jpg" alt="K38" loading="lazy">
+        <div class="gal-overlay">
+          <div class="gal-num">N° 07 / 11</div>
+          <div class="gal-title">K38</div>
+          <div class="gal-cat" data-sv="Bostad · Interiör · Renovering" data-en="Residential · Interiors · Rehabilitation">Bostad · Interiör · Renovering</div>
+        </div>
+      </div>
+      <div class="gal-item">
+        <img src="images/k12.jpg" alt="K12" loading="lazy">
+        <div class="gal-overlay">
+          <div class="gal-num">N° 08 / 11</div>
+          <div class="gal-title">K12</div>
+          <div class="gal-cat" data-sv="Bostad · Kommersiell · Interiör" data-en="Residential · Commercial · Interiors">Bostad · Kommersiell · Interiör</div>
+        </div>
+      </div>
+      <div class="gal-item">
+        <img src="images/dterra.jpg" alt="Bistró Dterra" loading="lazy">
+        <div class="gal-overlay">
+          <div class="gal-num">N° 09 / 11</div>
+          <div class="gal-title">BISTRÓ DTERRA</div>
+          <div class="gal-cat" data-sv="Hospitality · Kommersiell · Interiör" data-en="Hospitality · Commercial · Interiors">Hospitality · Kommersiell · Interiör</div>
+        </div>
+      </div>
+      <div class="gal-item">
+        <img src="images/a75.jpg" alt="A75" loading="lazy">
+        <div class="gal-overlay">
+          <div class="gal-num">N° 10 / 11</div>
+          <div class="gal-title">A75</div>
+          <div class="gal-cat" data-sv="Bostad · Interiör · Kulturarv" data-en="Residential · Interiors · Heritage">Bostad · Interiör · Kulturarv</div>
         </div>
       </div>
       <div class="gal-item">
         <img src="images/academy.jpg" alt="Academy District" loading="lazy">
         <div class="gal-overlay">
-          <div class="gal-num">N° 08 / 08</div>
+          <div class="gal-num">N° 11 / 11</div>
           <div class="gal-title">ACADEMY DISTRICT</div>
-          <div class="gal-cat" data-sv="Stadsplanering" data-en="Urban Design">Stadsplanering</div>
+          <div class="gal-cat" data-sv="Arkitektur · Stadsplanering · Landskap" data-en="Architecture · Urban Design · Landscape">Arkitektur · Stadsplanering · Landskap</div>
         </div>
       </div>
     </div>
@@ -661,7 +685,6 @@
       <div>
         <div class="contact-emails">
           <a href="mailto:info@wolfblanc.com" class="contact-email">info@wolfblanc.com</a>
-          <a href="mailto:dolores@wolfblanc.com" class="contact-email">dolores@wolfblanc.com</a>
         </div>
         <p class="contact-lang" data-sv="Vi svarar på svenska, engelska, spanska och grekiska." data-en="We respond in Swedish, English, Spanish, and Greek.">Vi svarar på svenska, engelska, spanska och grekiska.</p>
       </div>
@@ -673,9 +696,8 @@
 
     <div class="start-project">
       <h3 data-sv="Starta ditt projekt" data-en="Start your project">Starta ditt projekt</h3>
-      <a href="mailto:dolores@wolfblanc.com" class="btn-outline" data-sv="STARTA DITT PROJEKT" data-en="START YOUR PROJECT">STARTA DITT PROJEKT</a>
-      <p data-sv='Eller kontakta oss direkt på <a href="mailto:dolores@wolfblanc.com">dolores@wolfblanc.com</a>' data-en='Or contact us directly at <a href="mailto:dolores@wolfblanc.com">dolores@wolfblanc.com</a>'>Eller kontakta oss direkt på <a href="mailto:dolores@wolfblanc.com">dolores@wolfblanc.com</a></p>
-      <p class="prefer-international" data-sv='International site: <a href="https://wolfblanc.com" target="_blank" rel="noopener">wolfblanc.com →</a>' data-en='International site: <a href="https://wolfblanc.com" target="_blank" rel="noopener">wolfblanc.com →</a>'>International site: <a href="https://wolfblanc.com" target="_blank" rel="noopener">wolfblanc.com →</a></p>
+      <a href="mailto:info@wolfblanc.com" class="btn-outline" data-sv="STARTA DITT PROJEKT" data-en="START YOUR PROJECT">STARTA DITT PROJEKT</a>
+      <p data-sv='Eller kontakta oss direkt på <a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a>' data-en='Or contact us directly at <a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a>'>Eller kontakta oss direkt på <a href="mailto:info@wolfblanc.com">info@wolfblanc.com</a></p>
     </div>
   </div>
 </div>
@@ -704,8 +726,8 @@
   // Language
   const langButtons = document.querySelectorAll('[data-lang-switch]');
   const heroLines = {
-    sv: ['NORDISK ARKITEKTUR.', 'INTERNATIONELL', 'ERFARENHET.'],
-    en: ['NORDIC ARCHITECTURE.', 'INTERNATIONAL', 'EXPERIENCE.']
+    sv: ['AMBITIÖSA', 'PROJEKT.'],
+    en: ['AMBITIOUS', 'PROJECTS.']
   };
 
   function renderHero(lang){
@@ -776,14 +798,17 @@
 
   // Gallery: project data for marquee
   const projects = [
-    { img:'images/norrsken.jpg', num:'N° 01 / 08', sv:'NORRSKEN',          en:'NORRSKEN',          cat_sv:'Bostadsinteriör',          cat_en:'Residential Interiors' },
-    { img:'images/horizon.jpg',  num:'N° 02 / 08', sv:'HORIZON',           en:'HORIZON',           cat_sv:'Arkitektur & Landskap',    cat_en:'Architecture & Landscape' },
-    { img:'images/axis.jpg',     num:'N° 03 / 08', sv:'AXIS',              en:'AXIS',              cat_sv:'Kommersiell interiör',     cat_en:'Commercial Interiors' },
-    { img:'images/k38.jpg',      num:'N° 04 / 08', sv:'K38',               en:'K38',               cat_sv:'Totalrenovering',          cat_en:'Full Renovation' },
-    { img:'images/k12.jpg',      num:'N° 05 / 08', sv:'K12',               en:'K12',               cat_sv:'Korttidsuthyrning',        cat_en:'Short-term Rental' },
-    { img:'images/boadilla.jpg', num:'N° 06 / 08', sv:'BOADILLA',          en:'BOADILLA',          cat_sv:'Bostadsvilla',             cat_en:'Residential Villa' },
-    { img:'images/granolita.jpg',num:'N° 07 / 08', sv:'GRANOLITA',         en:'GRANOLITA',         cat_sv:'Renovering & Interiör',    cat_en:'Renovation & Interiors' },
-    { img:'images/academy.jpg',  num:'N° 08 / 08', sv:'ACADEMY DISTRICT',  en:'ACADEMY DISTRICT',  cat_sv:'Stadsplanering',           cat_en:'Urban Design' },
+    { img:'images/boadilla.jpg', num:'N° 01 / 11', sv:'CASA BOADILLA',     en:'CASA BOADILLA',     cat_sv:'Bostad · Arkitektur · Interiör',          cat_en:'Residential · Architecture · Interiors' },
+    { img:'images/horizon.jpg',  num:'N° 02 / 11', sv:'HORIZON HOUSE',     en:'HORIZON HOUSE',     cat_sv:'Bostad · Arkitektur · Interiör',          cat_en:'Residential · Architecture · Interiors' },
+    { img:'images/norrsken.jpg', num:'N° 03 / 11', sv:'NORRSKEN OFFICE',   en:'NORRSKEN OFFICE',   cat_sv:'Kommersiell · Arbetsplats · Interiör',    cat_en:'Commercial · Workplace · Interiors' },
+    { img:'images/selva.jpg',    num:'N° 04 / 11', sv:'SELVA HOTEL',       en:'SELVA HOTEL',       cat_sv:'Hospitality · Interiör · Landskap',       cat_en:'Hospitality · Interiors · Landscape' },
+    { img:'images/granolita.jpg',num:'N° 05 / 11', sv:'GRANOLITA',         en:'GRANOLITA',         cat_sv:'Hospitality · Kommersiell · Interiör',    cat_en:'Hospitality · Commercial · Interiors' },
+    { img:'images/axis.jpg',     num:'N° 06 / 11', sv:'DISTRITO AXIS',     en:'DISTRITO AXIS',     cat_sv:'Kommersiell · Arkitektur · Stadsplanering',cat_en:'Commercial · Architecture · Urban Design' },
+    { img:'images/k38.jpg',      num:'N° 07 / 11', sv:'K38',               en:'K38',               cat_sv:'Bostad · Interiör · Renovering',          cat_en:'Residential · Interiors · Rehabilitation' },
+    { img:'images/k12.jpg',      num:'N° 08 / 11', sv:'K12',               en:'K12',               cat_sv:'Bostad · Kommersiell · Interiör',         cat_en:'Residential · Commercial · Interiors' },
+    { img:'images/dterra.jpg',   num:'N° 09 / 11', sv:'BISTRÓ DTERRA',     en:'BISTRÓ DTERRA',     cat_sv:'Hospitality · Kommersiell · Interiör',    cat_en:'Hospitality · Commercial · Interiors' },
+    { img:'images/a75.jpg',      num:'N° 10 / 11', sv:'A75',               en:'A75',               cat_sv:'Bostad · Interiör · Kulturarv',           cat_en:'Residential · Interiors · Heritage' },
+    { img:'images/academy.jpg',  num:'N° 11 / 11', sv:'ACADEMY DISTRICT',  en:'ACADEMY DISTRICT',  cat_sv:'Arkitektur · Stadsplanering · Landskap',  cat_en:'Architecture · Urban Design · Landscape' },
   ];
 
   // Build marquee items (doubled for seamless loop)
