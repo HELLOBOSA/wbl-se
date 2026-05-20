@@ -1,0 +1,848 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E4P7B0KJ1B"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E4P7B0KJ1B');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+
+  <title>Arkitekt Stockholm - WOLFBLANC ARCHITECTS</title>
+  <meta name="description" content="Arkitektkontor i Stockholm med nordisk metodik och internationell erfarenhet. Bostäder, renoveringar och investeringsprojekt. BIM-dokumentation. SAR/MSA registrerad · WELL AP. Boka kostnadsfritt samtal.">
+
+  <link rel="canonical" href="https://wolfblanc.se">
+  <link rel="alternate" hreflang="sv" href="https://wolfblanc.se">
+  <link rel="alternate" hreflang="x-default" href="https://wolfblanc.se">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="sv_SE">
+  <meta property="og:title" content="Arkitekt Stockholm - WOLFBLANC ARCHITECTS">
+  <meta property="og:description" content="Arkitektkontor i Stockholm. BIM-metodik. SAR/MSA registrerad. WELL AP certifierad.">
+  <meta property="og:url" content="https://wolfblanc.se">
+  <meta property="og:site_name" content="Wolfblanc Architects">
+  <meta property="og:image" content="https://wolfblanc.se/images/team.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Arkitekt Stockholm - WOLFBLANC ARCHITECTS">
+  <meta name="twitter:description" content="Arkitektkontor i Stockholm. SAR/MSA registrerad · WELL AP.">
+  <meta name="twitter:image" content="https://wolfblanc.se/images/team.jpg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["LocalBusiness", "Architect"],
+    "name": "Wolfblanc Architects",
+    "url": "https://wolfblanc.se",
+    "sameAs": ["https://wolfblanc.com"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Kungsgatan 9",
+      "addressLocality": "Stockholm",
+      "postalCode": "11143",
+      "addressCountry": "SE"
+    },
+    "telephone": "+46736566489",
+    "email": "info@wolfblanc.com",
+    "description": "Arkitektkontor i Stockholm med nordisk metodik och internationell erfarenhet. Bostäder, kommersiella projekt och renoveringar.",
+    "areaServed": "Sverige",
+    "hasCredential": "SAR/MSA",
+    "openingHours": ["Mo-Fr 09:00-18:00"]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg:#f4f4f4; --text-primary:#080808; --text-secondary:#555555;
+      --accent:#333333; --glass-bg:rgba(8,8,8,0.04);
+      --glass-border:rgba(8,8,8,0.1); --glass-border-hover:rgba(8,8,8,0.25);
+      --line:rgba(8,8,8,0.1); --nav-bg:rgba(244,244,244,0.95);
+    }
+    html.dark {
+      --bg:#080808; --text-primary:#f5f5f5; --text-secondary:#666666;
+      --accent:#e0e0e0; --glass-bg:rgba(255,255,255,0.03);
+      --glass-border:rgba(255,255,255,0.07); --glass-border-hover:rgba(255,255,255,0.18);
+      --line:rgba(255,255,255,0.08); --nav-bg:rgba(8,8,8,0.95);
+    }
+
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;scrollbar-width:none;-ms-overflow-style:none}
+    html::-webkit-scrollbar{width:0;background:transparent}
+    body{
+      background:var(--bg);color:var(--text-primary);
+      font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+      font-weight:300;line-height:2;letter-spacing:0.05em;
+      transition:background .4s,color .4s;overflow-x:hidden;cursor:none
+    }
+    h1,h2,h3,h4{text-transform:uppercase;letter-spacing:0.22em;font-weight:200}
+    a{color:inherit;text-decoration:none;transition:color .3s;cursor:none}
+    img{display:block;max-width:100%}
+    address{font-style:normal}
+    @media(hover:none){body,a{cursor:auto}}
+
+    /* Cursor */
+    #cursor-dot{
+      width:6px;height:6px;background:var(--accent);border-radius:50%;
+      position:fixed;pointer-events:none;z-index:9999;
+      transform:translate(-50%,-50%);
+    }
+    #cursor-ring{
+      width:28px;height:28px;border:1px solid var(--accent);opacity:.4;
+      border-radius:50%;position:fixed;pointer-events:none;z-index:9998;
+      transform:translate(-50%,-50%);
+      transition:width .3s,height .3s,opacity .3s;
+    }
+    body.cursor-hover #cursor-ring{width:44px;height:44px;opacity:1}
+    @media(hover:none){#cursor-dot,#cursor-ring{display:none}}
+
+    /* Nav */
+    nav{
+      position:fixed;top:0;left:0;width:100%;height:72px;z-index:1000;
+      display:flex;align-items:center;justify-content:space-between;
+      padding:0 2rem;transition:background .6s
+    }
+    nav.scrolled{background:var(--nav-bg);backdrop-filter:blur(24px)}
+    .nav-logo{font-size:.85rem;font-weight:200;letter-spacing:.25em;color:var(--text-primary);white-space:nowrap}
+    .nav-logo:hover{color:var(--accent)}
+    .nav-right{display:flex;align-items:center;gap:20px}
+    .nav-links{display:flex;align-items:center;gap:24px}
+    .nav-link{font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;font-weight:300;color:var(--text-secondary);transition:color .3s}
+    .nav-link:hover,.nav-link.active{color:var(--accent)}
+    .nav-mobile-link{display:none;font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;font-weight:300;color:var(--text-secondary)}
+    .language-switch{display:inline-flex;align-items:center;gap:4px;border:1px solid var(--line);padding:3px}
+    .lang-btn{background:transparent;border:0;color:var(--text-secondary);font-size:.58rem;letter-spacing:.18em;text-transform:uppercase;padding:4px 6px;cursor:none;transition:color .3s}
+    .lang-btn:hover,.lang-btn.active{color:var(--accent)}
+    .theme-btn{background:none;border:none;cursor:none;color:var(--text-secondary);display:flex;align-items:center;padding:8px;transition:color .3s}
+    .theme-btn:hover{color:var(--text-primary)}
+    @media(max-width:768px){
+      nav{padding:0 1.1rem}
+      .nav-links{display:none}
+      .nav-mobile-link{display:block}
+      .nav-right{gap:10px}
+      .nav-mobile-link{font-size:.55rem;letter-spacing:.14em}
+      .nav-logo{font-size:.72rem;letter-spacing:.18em}
+    }
+
+    /* Layout */
+    .wrap{max-width:960px;margin:0 auto;padding:0 24px}
+    .section{padding:100px 0}
+    @media(min-width:769px){.section{padding:160px 0}}
+    .section-reveal{opacity:1;transform:none;transition:opacity .8s ease,transform .8s ease}
+    .section-reveal.visible{opacity:1;transform:none}
+
+    /* Hero */
+    .hero{height:100vh;display:flex;flex-direction:column;justify-content:center}
+    .hero-eyebrow{font-size:.6rem;letter-spacing:.4em;color:#444;text-transform:uppercase;margin-bottom:24px}
+    .hero-h1{font-size:clamp(1.4rem,4.5vw,6.5rem);font-weight:200;line-height:1.1;letter-spacing:.2em;margin-bottom:32px}
+    .hero-rule{height:1px;background:var(--accent);opacity:.3;width:0;animation:drawLine 1s ease forwards 1.2s;margin-bottom:40px}
+    @keyframes drawLine{to{width:80px}}
+    .hero-credentials{font-size:.7rem;letter-spacing:.3em;color:var(--text-secondary);text-transform:uppercase;margin-bottom:32px}
+    .hero-lead{max-width:480px;font-size:.95rem;color:var(--text-secondary);line-height:2;margin-bottom:48px}
+    .hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:32px}
+    .btn-outline{
+      display:inline-block;border:1px solid var(--accent);color:var(--accent);
+      padding:16px 32px;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;
+      background:transparent;transition:all .4s;cursor:none
+    }
+    .btn-outline:hover{background:var(--accent);color:var(--bg)}
+    .text-link{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--text-secondary);display:flex;align-items:center;gap:8px;transition:color .4s}
+    .text-link:hover{color:var(--text-primary)}
+
+    /* Hero word animation */
+    .word{display:inline-block;margin-right:.24em;opacity:1}
+
+    /* Studio */
+    .studio-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+    @media(max-width:768px){.studio-grid{grid-template-columns:1fr;gap:40px}}
+    .studio-creds{font-size:.6rem;letter-spacing:.3em;color:#444;text-transform:uppercase;display:flex;flex-wrap:wrap;gap:16px 32px;margin-top:48px}
+    .studio-img{
+      position:relative;aspect-ratio:1/1;width:100%;max-width:420px;
+      overflow:hidden;border-radius:2px;border:1px solid var(--glass-border)
+    }
+    .studio-img img{width:100%;height:100%;object-fit:cover;object-position:top;filter:grayscale(30%);transition:filter .6s}
+    .studio-img:hover img{filter:grayscale(0)}
+
+    /* Services */
+    .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+    .service-row{
+      background:var(--bg);
+      min-height:240px;
+      padding:32px;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      gap:24px;
+      transition:border-color .3s,background .3s
+    }
+    .service-row:hover{background:var(--glass-bg)}
+    .service-title{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;font-weight:300;color:var(--text-primary)}
+    .service-content{font-size:.82rem;color:var(--text-secondary);line-height:1.75}
+    @media(max-width:900px){.services-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:640px){.services-grid{grid-template-columns:1fr}.service-row{min-height:auto}}
+
+    /* Why cards */
+    .why-grid{display:grid;grid-template-columns:1fr 1fr}
+    @media(max-width:640px){.why-grid{grid-template-columns:1fr}}
+    .why-card{padding:40px;border:1px solid var(--line)}
+    .why-title{font-size:.75rem;letter-spacing:.22em;text-transform:uppercase;margin-bottom:16px}
+    .why-desc{font-size:.85rem;color:var(--text-secondary)}
+
+    /* Process */
+    .process-row{display:flex;align-items:center;padding:32px 0;border-bottom:1px solid var(--line)}
+    .process-num{font-size:3rem;font-weight:200;color:var(--accent);opacity:.12;margin-right:32px;line-height:1;flex-shrink:0}
+    .process-title{font-size:.75rem;letter-spacing:.22em;text-transform:uppercase;margin-bottom:8px}
+    .process-desc{font-size:.85rem;color:var(--text-secondary);line-height:1.9}
+
+    /* Gallery */
+    .gallery-controls{display:flex;align-items:center;gap:0;margin-bottom:48px;border:1px solid var(--line);width:fit-content}
+    .gallery-mode-btn{
+      background:transparent;border:none;
+      color:var(--text-secondary);font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;
+      padding:10px 20px;cursor:none;transition:all .3s;font-family:inherit
+    }
+    .gallery-mode-btn:first-child{border-right:1px solid var(--line)}
+    .gallery-mode-btn.active,.gallery-mode-btn:hover{color:var(--text-primary);background:var(--glass-bg)}
+
+    /* Stacked view */
+    .gallery-stacked{display:grid;grid-template-columns:repeat(2,1fr);gap:2px}
+    @media(max-width:640px){.gallery-stacked{grid-template-columns:1fr}}
+    .gal-item{position:relative;overflow:hidden;aspect-ratio:4/3;background:var(--glass-bg)}
+    .gal-item img{width:100%;height:100%;object-fit:cover;filter:grayscale(25%);transition:transform .9s cubic-bezier(.25,.46,.45,.94),filter .6s}
+    .gal-item:hover img{transform:scale(1.05);filter:grayscale(0)}
+    .gal-overlay{
+      position:absolute;bottom:0;left:0;right:0;
+      padding:20px 24px;
+      background:linear-gradient(transparent,rgba(0,0,0,.72));
+      color:#fff;opacity:0;transition:opacity .5s
+    }
+    .gal-item:hover .gal-overlay{opacity:1}
+    .gal-num{font-size:.5rem;letter-spacing:.3em;text-transform:uppercase;opacity:.65;margin-bottom:4px}
+    .gal-title{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;font-weight:300}
+    .gal-cat{font-size:.55rem;letter-spacing:.18em;text-transform:uppercase;opacity:.6;margin-top:2px}
+
+    /* Marquee view */
+    .gallery-marquee{overflow:hidden;position:relative;padding:4px 0}
+    .gallery-marquee::before,.gallery-marquee::after{
+      content:'';position:absolute;top:0;width:100px;height:100%;z-index:2;pointer-events:none
+    }
+    .gallery-marquee::before{left:0;background:linear-gradient(to right,var(--bg),transparent)}
+    .gallery-marquee::after{right:0;background:linear-gradient(to left,var(--bg),transparent)}
+    .marquee-track{display:flex;gap:3px;animation:marqueeSroll 38s linear infinite;width:max-content}
+    .gallery-marquee:hover .marquee-track{animation-play-state:paused}
+    @keyframes marqueeSroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+    .marquee-item{flex-shrink:0;width:360px;height:260px;position:relative;overflow:hidden}
+    @media(max-width:640px){.marquee-item{width:260px;height:190px}}
+    .marquee-item img{width:100%;height:100%;object-fit:cover;filter:grayscale(25%);transition:filter .5s,transform .8s}
+    .marquee-item:hover img{filter:grayscale(0);transform:scale(1.04)}
+    .marquee-label{
+      position:absolute;bottom:0;left:0;right:0;
+      padding:14px 16px;
+      background:linear-gradient(transparent,rgba(0,0,0,.68));
+      color:#fff;opacity:0;transition:opacity .4s
+    }
+    .marquee-item:hover .marquee-label{opacity:1}
+    .marquee-num{font-size:.48rem;letter-spacing:.28em;text-transform:uppercase;opacity:.6;margin-bottom:2px}
+    .marquee-title{font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;font-weight:300}
+    .marquee-cat{font-size:.48rem;letter-spacing:.18em;text-transform:uppercase;opacity:.55;margin-top:2px}
+
+    /* Testimonial */
+    .testimonial{padding:120px 0;text-align:center}
+    @media(min-width:769px){.testimonial{padding:200px 0}}
+    .testimonial blockquote{
+      max-width:700px;margin:0 auto;
+      font-size:clamp(1.1rem,2.5vw,1.4rem);font-weight:200;font-style:italic;
+      line-height:1.9;color:var(--text-primary);margin-bottom:40px
+    }
+    .testimonial cite{font-size:.6rem;letter-spacing:.25em;text-transform:uppercase;color:var(--text-secondary);font-style:normal}
+
+    /* Specialized cards */
+    .spec-grid{display:grid;grid-template-columns:1fr 1fr}
+    @media(max-width:640px){.spec-grid{grid-template-columns:1fr}}
+    .spec-card{
+      background:var(--glass-bg);border:1px solid var(--glass-border);
+      padding:40px;
+      display:flex;flex-direction:column;justify-content:space-between;
+      transition:border-color .3s
+    }
+    .spec-card:hover{border-color:var(--glass-border-hover)}
+    .spec-title{font-size:.75rem;letter-spacing:.22em;text-transform:uppercase;margin-bottom:16px;transition:color .3s}
+    .spec-card:hover .spec-title{color:var(--accent)}
+    .spec-desc{font-size:.85rem;color:var(--text-secondary)}
+    .spec-more{margin-top:32px;display:flex;align-items:center;gap:8px;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--text-secondary);transition:color .3s}
+    .spec-card:hover .spec-more{color:var(--text-primary)}
+
+    /* Portfolio CTA */
+    .proj-cta{padding:160px 0;text-align:center}
+    .proj-cta p{font-size:clamp(1rem,2.5vw,1.5rem);font-weight:300;margin-bottom:40px}
+
+    /* Contact */
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-bottom:48px}
+    @media(max-width:768px){.contact-grid{grid-template-columns:1fr}}
+    .contact-label{font-size:.75rem;letter-spacing:.22em;text-transform:uppercase;margin-bottom:16px}
+    .contact-text{font-size:.85rem;color:var(--text-secondary);line-height:2}
+    .contact-text a:hover{color:var(--text-primary)}
+    .contact-emails{display:flex;flex-direction:column;gap:12px}
+    .contact-email{font-size:.85rem;color:var(--text-secondary);transition:color .3s}
+    .contact-email:hover{color:var(--text-primary)}
+    .contact-lang{font-size:.6rem;letter-spacing:.1em;color:#444;margin-top:16px}
+    .map-wrap{
+      height:240px;border:1px solid var(--glass-border);border-radius:2px;overflow:hidden;
+      margin-top:48px;
+      filter:grayscale(100%) contrast(.85) brightness(1.1)
+    }
+    html.dark .map-wrap{filter:grayscale(100%) invert(1) contrast(.8) brightness(.85)}
+    @media(min-width:769px){.map-wrap{height:320px}}
+    .map-wrap iframe{width:100%;height:100%;border:0}
+    .start-project{border-top:1px solid var(--line);padding-top:48px;margin-top:48px}
+    .start-project h3{font-size:1.5rem;font-weight:200;margin-bottom:32px}
+    .start-project p{font-size:.75rem;color:var(--text-secondary);margin-top:24px}
+    .start-project p a{text-decoration:underline}
+    .start-project p a:hover{color:var(--text-primary)}
+    .prefer-international{margin-top:32px;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--text-secondary)}
+    .prefer-international a{text-decoration:underline;text-underline-offset:3px}
+    .prefer-international a:hover{color:var(--text-primary)}
+
+    /* Footer */
+    footer{
+      border-top:1px solid var(--line);padding:2rem;
+      display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;
+      font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--text-secondary)
+    }
+    .footer-link:hover{color:var(--text-primary)}
+
+    /* Back to top */
+    #btt{
+      position:fixed;bottom:40px;right:40px;width:44px;height:44px;
+      border:1px solid var(--accent);opacity:0;visibility:hidden;
+      display:flex;align-items:center;justify-content:center;
+      background:transparent;transition:opacity .4s,visibility .4s,background .3s;
+      z-index:100;cursor:none
+    }
+    #btt.visible{opacity:.3;visibility:visible}
+    #btt:hover{opacity:1;background:var(--accent)}
+    #btt svg{stroke:var(--accent);transition:stroke .3s}
+    #btt:hover svg{stroke:var(--bg)}
+
+    svg{display:inline-block;vertical-align:middle}
+
+    .eyebrow{font-size:.6rem;letter-spacing:.4em;color:#444;text-transform:uppercase;margin-bottom:48px;display:block}
+
+    @media(max-width:520px){
+      body{letter-spacing:.035em}
+      .hero{height:auto;min-height:100vh;padding:120px 0 80px}
+      .hero-h1{font-size:2rem;letter-spacing:.14em}
+      .hero-credentials{font-size:.62rem;letter-spacing:.22em}
+      .btn-outline{width:100%;text-align:center;padding:16px 20px;letter-spacing:.16em}
+    }
+  </style>
+</head>
+<body>
+
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+
+<nav id="nav">
+  <a href="#top" class="nav-logo" onclick="ss(event,'top')">WOLFBLANC</a>
+  <div class="nav-right">
+    <div class="nav-links">
+      <a href="#om-studion" class="nav-link" onclick="ss(event,'om-studion')" data-s="om-studion" data-sv="STUDIO" data-en="STUDIO">STUDIO</a>
+      <a href="#tjanster" class="nav-link" onclick="ss(event,'tjanster')" data-s="tjanster" data-sv="TJÄNSTER" data-en="SERVICES">TJÄNSTER</a>
+      <a href="#projekt" class="nav-link" onclick="ss(event,'projekt')" data-s="projekt" data-sv="PROJEKT" data-en="PROJECTS">PROJEKT</a>
+      <a href="#process" class="nav-link" onclick="ss(event,'process')" data-s="process" data-sv="PROCESS" data-en="PROCESS">PROCESS</a>
+      <a href="#kontakt" class="nav-link" onclick="ss(event,'kontakt')" data-s="kontakt" data-sv="KONTAKT" data-en="CONTACT">KONTAKT</a>
+    </div>
+    <a href="#kontakt" class="nav-mobile-link" onclick="ss(event,'kontakt')" data-sv="KONTAKT" data-en="CONTACT">KONTAKT</a>
+    <div class="language-switch" aria-label="Språkväljare">
+      <button class="lang-btn active" type="button" data-lang-switch="sv">SV</button>
+      <button class="lang-btn" type="button" data-lang-switch="en">EN</button>
+    </div>
+    <button class="theme-btn" onclick="toggleTheme()" aria-label="Byt tema">
+      <svg id="im" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg id="is" style="display:none" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- Hero -->
+<div id="top" class="wrap">
+  <div class="hero">
+    <div class="hero-eyebrow" data-sv="ARKITEKTUR & DESIGN" data-en="ARCHITECTURE & DESIGN">ARKITEKTUR & DESIGN</div>
+    <h1 class="hero-h1" id="hero-h1"></h1>
+    <div class="hero-rule"></div>
+    <div class="hero-credentials" data-sv="SAR/MSA Registrerad · WELL AP Certifierad · 20+ års erfarenhet" data-en="SAR/MSA Registered · WELL AP Certified · 20+ years of experience">SAR/MSA Registrerad · WELL AP Certifierad · 20+ års erfarenhet</div>
+    <p class="hero-lead" data-sv="Vi arbetar med bostäder, kommersiella projekt och stadsplanering med samma metodiska precision som byggde Sveriges mest ambitiösa bostadsprojekt." data-en="We work with homes, commercial projects, and urban planning with the same methodical precision behind some of Sweden's most ambitious residential projects.">Vi arbetar med bostäder, kommersiella projekt och stadsplanering med samma metodiska precision som byggde Sveriges mest ambitiösa bostadsprojekt.</p>
+    <div class="hero-actions">
+      <a href="#kontakt" class="btn-outline" onclick="ss(event,'kontakt')" data-sv="BOKA KOSTNADSFRITT SAMTAL" data-en="BOOK A FREE CALL">BOKA KOSTNADSFRITT SAMTAL</a>
+      <a href="#projekt" class="text-link" onclick="ss(event,'projekt')">
+        <span data-sv="Se våra projekt" data-en="View our projects">Se våra projekt</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Om Studion -->
+<div id="om-studion" class="wrap">
+  <div class="section section-reveal">
+    <span class="eyebrow" data-sv="OM STUDION" data-en="ABOUT THE STUDIO">OM STUDION</span>
+    <div class="studio-grid">
+      <div>
+        <p style="color:var(--text-primary);margin-bottom:0" data-sv="Wolfblanc är ett arkitektur- och designkontor med representation i Stockholm, Madrid och Aten. Vi har 20 års samlad erfarenhet från bostadsprojekt, stadsplanering och kommersiella interiörer, med track record från Skandinaviens ledande byggherrar: Skanska, JM och Einar Mattsson. Vi tar med oss den nordiska precisionen och tillämpar den i varje projekt vi tar oss an, oavsett land eller skala." data-en="Wolfblanc is an architecture and design studio with presence in Stockholm, Madrid, and Athens. We have 20 years of combined experience in residential projects, urban planning, and commercial interiors, with a track record from leading Scandinavian developers including Skanska, JM, and Einar Mattsson. We bring Nordic precision to every project we take on, regardless of country or scale.">
+          Wolfblanc är ett arkitektur- och designkontor med representation i Stockholm, Madrid och Aten. Vi har 20 års samlad erfarenhet från bostadsprojekt, stadsplanering och kommersiella interiörer, med track record från Skandinaviens ledande byggherrar: Skanska, JM och Einar Mattsson. Vi tar med oss den nordiska precisionen och tillämpar den i varje projekt vi tar oss an, oavsett land eller skala.
+        </p>
+        <div class="studio-creds">
+          <span>SAR/MSA</span><span>COAM N.25160</span>
+          <span>TEE-TCG</span><span>WELL AP</span><span>BIM</span>
+        </div>
+      </div>
+      <div class="studio-img">
+        <img src="images/team.jpg" alt="Wolfblanc Architects" loading="lazy">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Tjänster -->
+<div id="tjanster" class="wrap">
+  <div class="section section-reveal">
+    <span class="eyebrow" data-sv="TJÄNSTER" data-en="SERVICES">TJÄNSTER</span>
+    <div class="services-grid">
+      <div class="service-row">
+        <div class="service-title" data-sv="TEKNISK DUE DILIGENCE FÖRE FÖRVÄRV" data-en="PRE-ACQUISITION TECHNICAL DUE DILIGENCE">TEKNISK DUE DILIGENCE FÖRE FÖRVÄRV</div>
+        <div class="service-content">
+          <span data-sv="Vi hjälper köpare, investerare och family offices att förstå en fastighet innan de binder kapital. Vi bedömer rumslig potential, planrisk, tekniska begränsningar, renoveringsomfattning och möjligheter till värdeskapande." data-en="We help buyers, investors, and family offices understand a property before committing. We assess spatial potential, planning risk, technical constraints, renovation scope, and value-creation opportunities so decisions are made with clarity.">Vi hjälper köpare, investerare och family offices att förstå en fastighet innan de binder kapital. Vi bedömer rumslig potential, planrisk, tekniska begränsningar, renoveringsomfattning och möjligheter till värdeskapande.</span>
+        </div>
+      </div>
+      <div class="service-row">
+        <div class="service-title" data-sv="ARKITEKTUR & LANDSKAP" data-en="ARCHITECTURE & LANDSCAPE">ARKITEKTUR & LANDSKAP</div>
+        <div class="service-content">
+          <span data-sv="Vi utformar byggnader och deras miljöer som ett integrerat system. Från koncept till färdigställande balanserar vi rumslig klarhet, miljörespons och byggbarhet." data-en="We design buildings and their environments as one integrated system. From concept to completion, our work balances spatial clarity, environmental response, and buildability.">Vi utformar byggnader och deras miljöer som ett integrerat system. Från koncept till färdigställande balanserar vi rumslig klarhet, miljörespons och byggbarhet.</span>
+        </div>
+      </div>
+      <div class="service-row">
+        <div class="service-title" data-sv="PROJEKTLEDNING / NYBYGGNAD / TOTALRENOVERING" data-en="PROJECT MANAGEMENT / NEW BUILD / TOTAL RENOVATION">PROJEKTLEDNING / NYBYGGNAD / TOTALRENOVERING</div>
+        <div class="service-content">
+          <span data-sv="Vi leder projekt med stark samordning, tydlig kommunikation och integrerade BIM-flöden, så att struktur, effektivitet och kvalitet säkras från idé till leverans." data-en="We lead projects with strong coordination, clear communication, and integrated BIM workflows, ensuring structure, efficiency, and quality from concept to completion.">Vi leder projekt med stark samordning, tydlig kommunikation och integrerade BIM-flöden, så att struktur, effektivitet och kvalitet säkras från idé till leverans.</span>
+        </div>
+      </div>
+      <div class="service-row">
+        <div class="service-title" data-sv="BOSTADSINTERIÖRER" data-en="RESIDENTIAL INTERIORS">BOSTADSINTERIÖRER</div>
+        <div class="service-content">
+          <span data-sv="Vi utformar inomhusmiljöer som fungerar och känns rätt. Varje rum anpassas till vardagligt bruk, med omsorg om ljus, material och atmosfär." data-en="We design interior environments that work and feel right. Each space is tailored to daily use, with attention to light, material, and atmosphere.">Vi utformar inomhusmiljöer som fungerar och känns rätt. Varje rum anpassas till vardagligt bruk, med omsorg om ljus, material och atmosfär.</span>
+        </div>
+      </div>
+      <div class="service-row">
+        <div class="service-title" data-sv="KOMMERSIELL STRATEGI & INTERIÖR" data-en="COMMERCIAL STRATEGY & INTERIORS">KOMMERSIELL STRATEGI & INTERIÖR</div>
+        <div class="service-content">
+          <span data-sv="Vi designar högpresterande miljöer för varumärken och investerare. Från flexibla arbetsplatser och hospitality till showrooms och retailkoncept skapar vi kommersiella interiörer där varumärke och drift möts." data-en="We design high-performance environments for brands and investors. From agile workspaces and hospitality venues to immersive showrooms and retail concepts, we create commercial interiors that align brand identity with operational efficiency.">Vi designar högpresterande miljöer för varumärken och investerare. Från flexibla arbetsplatser och hospitality till showrooms och retailkoncept skapar vi kommersiella interiörer där varumärke och drift möts.</span>
+        </div>
+      </div>
+      <div class="service-row">
+        <div class="service-title" data-sv="STADSPLANERING & MASTERPLANNING" data-en="URBAN DESIGN & MASTERPLANNING">STADSPLANERING & MASTERPLANNING</div>
+        <div class="service-content">
+          <span data-sv="Vi planerar platser, stadsdelar och offentliga miljöer med tydlig rumslig strategi. Från tidig genomförbarhet till masterplans och offentliga rum kopplar vi samman täthet, rörelse, landskap och långsiktigt värde." data-en="We plan sites, districts, and public environments with a clear spatial strategy. From early feasibility to masterplans and public realm concepts, our work connects density, movement, landscape, and long-term value.">Vi planerar platser, stadsdelar och offentliga miljöer med tydlig rumslig strategi. Från tidig genomförbarhet till masterplans och offentliga rum kopplar vi samman täthet, rörelse, landskap och långsiktigt värde.</span>
+        </div>
+      </div>
+      <div class="service-row">
+        <div class="service-title" data-sv="BIM-KONSULTATION" data-en="BIM CONSULTANCY">BIM-KONSULTATION</div>
+        <div class="service-content">
+          <span data-sv="Digital precision i varje fas. Med omfattande erfarenhet som BIM managers förbättrar vi samordning, minskar risk och gör projektdatan till ett verktyg för smartare beslut." data-en="Digital precision at every stage. With extensive experience as BIM managers, we streamline coordination, reduce risk, and improve collaboration between disciplines.">Digital precision i varje fas. Med omfattande erfarenhet som BIM managers förbättrar vi samordning, minskar risk och gör projektdatan till ett verktyg för smartare beslut.</span>
+        </div>
+      </div>
+      <div class="service-row">
+        <div class="service-title" data-sv="VÄLBEFINNANDEKONSULTATION" data-en="WELL-BEING CONSULTANCY">VÄLBEFINNANDEKONSULTATION</div>
+        <div class="service-content">
+          <span data-sv="Vi designar för mänsklig prestation och hälsa. Som WELL AP-konsulter mäter och optimerar vi luft, ljus, akustik och komfort genom evidensbaserad design." data-en="We design for human performance and health. As WELL AP consultants, we measure and optimize air, light, acoustics, and comfort through evidence-based design.">Vi designar för mänsklig prestation och hälsa. Som WELL AP-konsulter mäter och optimerar vi luft, ljus, akustik och komfort genom evidensbaserad design.</span>
+        </div>
+      </div>
+      <div class="service-row">
+        <div class="service-title" data-sv="ARKITEKTONISK VISUALISERING" data-en="ARCHITECTURAL VISUALIZATION">ARKITEKTONISK VISUALISERING</div>
+        <div class="service-content">
+          <span data-sv="Vi omvandlar designidéer till tydligt visuellt material för beslut, tillstånd, försäljning och investerarkommunikation. Bilder, konceptstudier, animationer och staging hjälper kunder att förstå värde innan byggstart." data-en="We turn design ideas into clear visual material for decisions, permits, sales, and investor communication. From still images and concept studies to animations and staging, visualization helps clients understand value before construction begins.">Vi omvandlar designidéer till tydligt visuellt material för beslut, tillstånd, försäljning och investerarkommunikation. Bilder, konceptstudier, animationer och staging hjälper kunder att förstå värde innan byggstart.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Varför Wolfblanc -->
+<div class="wrap">
+  <div class="section section-reveal">
+    <span class="eyebrow" data-sv="VARFÖR WOLFBLANC" data-en="WHY WOLFBLANC">VARFÖR WOLFBLANC</span>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-title" data-sv="SAR/MSA REGISTRERAD" data-en="SAR/MSA REGISTERED">SAR/MSA REGISTRERAD</div>
+        <p class="why-desc" data-sv="Licensierad och registrerad för arkitektuppdrag i Sverige." data-en="Licensed and registered for architectural assignments in Sweden.">Licensierad och registrerad för arkitektuppdrag i Sverige.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-title" data-sv="WELL AP CERTIFIERAD" data-en="WELL AP CERTIFIED">WELL AP CERTIFIERAD</div>
+        <p class="why-desc" data-sv="Certifierad kompetens i hälsofrämjande byggnadsstandarder." data-en="Certified expertise in health-focused building standards.">Certifierad kompetens i hälsofrämjande byggnadsstandarder.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-title" data-sv="NORDISK PRECISION" data-en="NORDIC PRECISION">NORDISK PRECISION</div>
+        <p class="why-desc" data-sv="Bevisad erfarenhet från Skandinaviens kravställande marknad." data-en="Proven experience from Scandinavia's demanding building market.">Bevisad erfarenhet från Skandinaviens kravställande marknad.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-title" data-sv="FLERSPRÅKIG SERVICE" data-en="MULTILINGUAL SERVICE">FLERSPRÅKIG SERVICE</div>
+        <p class="why-desc" data-sv="Vi kommunicerar på svenska, engelska, spanska och grekiska." data-en="We communicate in Swedish, English, Spanish, and Greek.">Vi kommunicerar på svenska, engelska, spanska och grekiska.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Projekt / Gallery -->
+<div id="projekt" class="wrap">
+  <div class="section section-reveal">
+    <span class="eyebrow" data-sv="PROJEKT" data-en="PROJECTS">PROJEKT</span>
+
+    <div class="gallery-controls" role="group" aria-label="Gallerivy">
+      <button class="gallery-mode-btn active" data-mode="stacked" onclick="setGalleryMode('stacked')" data-sv="GRID" data-en="GRID">GRID</button>
+      <button class="gallery-mode-btn" data-mode="marquee" onclick="setGalleryMode('marquee')" data-sv="MARQUEE" data-en="MARQUEE">MARQUEE</button>
+    </div>
+
+    <!-- Stacked / Grid view -->
+    <div id="gallery-stacked" class="gallery-stacked">
+      <div class="gal-item">
+        <img src="images/norrsken.jpg" alt="Norrsken" loading="lazy">
+        <div class="gal-overlay">
+          <div class="gal-num">N° 01 / 08</div>
+          <div class="gal-title">NORRSKEN</div>
+          <div class="gal-cat" data-sv="Bostadsinteriör" data-en="Residential Interiors">Bostadsinteriör</div>
+        </div>
+      </div>
+      <div class="gal-item">
+        <img src="images/horizon.jpg" alt="Horizon" loading="lazy">
+        <div class="gal-overlay">
+          <div class="gal-num">N° 02 / 08</div>
+          <div class="gal-title">HORIZON</div>
+          <div class="gal-cat" data-sv="Arkitektur & Landskap" data-en="Architecture & Landscape">Arkitektur & Landskap</div>
+        </div>
+      </div>
+      <div class="gal-item">
+        <img src="images/axis.jpg" alt="Axis" loading="lazy">
+        <div class="gal-overlay">
+          <div class="gal-num">N° 03 / 08</div>
+          <div class="gal-title">AXIS</div>
+          <div class="gal-cat" data-sv="Kommersiell interiör" data-en="Commercial Interiors">Kommersiell interiör</div>
+        </div>
+      </div>
+      <div class="gal-item">
+        <img src="images/k38.jpg" alt="K38" loading="lazy">
+        <div class="gal-overlay">
+          <div class="gal-num">N° 04 / 08</div>
+          <div class="gal-title">K38</div>
+          <div class="gal-cat" data-sv="Totalrenovering" data-en="Full Renovation">Totalrenovering</div>
+        </div>
+      </div>
+      <div class="gal-item">
+        <img src="images/k12.jpg" alt="K12 Airbnb" loading="lazy">
+        <div class="gal-overlay">
+          <div class="gal-num">N° 05 / 08</div>
+          <div class="gal-title">K12</div>
+          <div class="gal-cat" data-sv="Korttidsuthyrning" data-en="Short-term Rental">Korttidsuthyrning</div>
+        </div>
+      </div>
+      <div class="gal-item">
+        <img src="images/boadilla.jpg" alt="Boadilla" loading="lazy">
+        <div class="gal-overlay">
+          <div class="gal-num">N° 06 / 08</div>
+          <div class="gal-title">BOADILLA</div>
+          <div class="gal-cat" data-sv="Bostadsvilla" data-en="Residential Villa">Bostadsvilla</div>
+        </div>
+      </div>
+      <div class="gal-item">
+        <img src="images/granolita.jpg" alt="Granolita" loading="lazy">
+        <div class="gal-overlay">
+          <div class="gal-num">N° 07 / 08</div>
+          <div class="gal-title">GRANOLITA</div>
+          <div class="gal-cat" data-sv="Renovering & Interiör" data-en="Renovation & Interiors">Renovering & Interiör</div>
+        </div>
+      </div>
+      <div class="gal-item">
+        <img src="images/academy.jpg" alt="Academy District" loading="lazy">
+        <div class="gal-overlay">
+          <div class="gal-num">N° 08 / 08</div>
+          <div class="gal-title">ACADEMY DISTRICT</div>
+          <div class="gal-cat" data-sv="Stadsplanering" data-en="Urban Design">Stadsplanering</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Marquee view (hidden by default) -->
+    <div id="gallery-marquee" class="gallery-marquee" style="display:none" aria-hidden="true">
+      <div class="marquee-track" id="marquee-track">
+        <!-- Items injected by JS to avoid duplicate HTML -->
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Process -->
+<div id="process" class="wrap">
+  <div class="section section-reveal">
+    <span class="eyebrow" data-sv="PROCESS" data-en="PROCESS">PROCESS</span>
+    <div>
+      <div class="process-row">
+        <div class="process-num">01</div>
+        <div><div class="process-title" data-sv="LYSSNA" data-en="LISTEN">LYSSNA</div><p class="process-desc" data-sv="Vi förstår ditt projekt, dina behov, budget och möjligheter." data-en="We understand your project, needs, budget, and possibilities.">Vi förstår ditt projekt, dina behov, budget och möjligheter.</p></div>
+      </div>
+      <div class="process-row">
+        <div class="process-num">02</div>
+        <div><div class="process-title" data-sv="DESIGNA" data-en="DESIGN">DESIGNA</div><p class="process-desc" data-sv="Vi utvecklar och visualiserar det arkitektoniska konceptet." data-en="We develop and visualize the architectural concept.">Vi utvecklar och visualiserar det arkitektoniska konceptet.</p></div>
+      </div>
+      <div class="process-row">
+        <div class="process-num">03</div>
+        <div><div class="process-title" data-sv="PLANERA" data-en="PLAN">PLANERA</div><p class="process-desc" data-sv="Vi upprättar alla ritningar, detaljer och konstruktionsbeslut." data-en="We prepare drawings, details, and construction decisions.">Vi upprättar alla ritningar, detaljer och konstruktionsbeslut.</p></div>
+      </div>
+      <div class="process-row">
+        <div class="process-num">04</div>
+        <div><div class="process-title" data-sv="BYGGA" data-en="BUILD">BYGGA</div><p class="process-desc" data-sv="Vi följer projektet genom utförande och färdigställande." data-en="We follow the project through execution and completion.">Vi följer projektet genom utförande och färdigställande.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Testimonial -->
+<div class="wrap">
+  <div class="testimonial section-reveal">
+    <blockquote data-sv='"Vårt fritidshus kombinerar nordisk enkelhet med medelhavets ljus, precis vad vi hoppades på när vi bestämde oss för att flytta."' data-en='"Our second home combines Nordic simplicity with Mediterranean light, exactly what we hoped for when we decided to move."'>
+      "Vårt fritidshus kombinerar nordisk enkelhet med medelhavets ljus, precis vad vi hoppades på när vi bestämde oss för att flytta."
+    </blockquote>
+    <cite data-sv="— JONAS ANDERSSON & EMILIA NILSSON · HUSÄGARE" data-en="— JONAS ANDERSSON & EMILIA NILSSON · HOMEOWNERS">— JONAS ANDERSSON & EMILIA NILSSON · HUSÄGARE</cite>
+  </div>
+</div>
+
+<!-- Specialiserade Tjänster -->
+<div class="wrap">
+  <div class="section section-reveal">
+    <span class="eyebrow" data-sv="VÅRT ERBJUDANDE" data-en="OUR OFFER">VÅRT ERBJUDANDE</span>
+    <h2 style="font-size:1.5rem;margin-bottom:48px" data-sv="Specialiserade Tjänster" data-en="Specialized Services">Specialiserade Tjänster</h2>
+    <div class="spec-grid">
+      <div class="spec-card">
+        <div><div class="spec-title" data-sv="FÖR INVESTERARE" data-en="FOR INVESTORS">FÖR INVESTERARE</div><p class="spec-desc" data-sv="Strategisk arkitektur för fastighetsinvesteringar med mätbart ROI." data-en="Strategic architecture for property investments with measurable ROI.">Strategisk arkitektur för fastighetsinvesteringar med mätbart ROI.</p></div>
+        <a href="#kontakt" onclick="ss(event,'kontakt')" class="spec-more"><span data-sv="Kontakta oss" data-en="Contact us">Kontakta oss</span> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+      <div class="spec-card">
+        <div><div class="spec-title" data-sv="FÖR HUSÄGARE" data-en="FOR HOMEOWNERS">FÖR HUSÄGARE</div><p class="spec-desc" data-sv="Skräddarsydd renovering och bostadsdesign med nordisk precision." data-en="Tailored renovation and residential design with Nordic precision.">Skräddarsydd renovering och bostadsdesign med nordisk precision.</p></div>
+        <a href="#kontakt" onclick="ss(event,'kontakt')" class="spec-more"><span data-sv="Kontakta oss" data-en="Contact us">Kontakta oss</span> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+      <div class="spec-card">
+        <div><div class="spec-title" data-sv="FRITIDSHUS & ANDRABOSTAD I SPANIEN OCH GREKLAND" data-en="SECOND HOMES IN SPAIN AND GREECE">FRITIDSHUS & ANDRABOSTAD I SPANIEN OCH GREKLAND</div><p class="spec-desc" data-sv="Din villa i Spanien och Grekland, designad, tillståndssökt och levererad av Wolfblanc." data-en="Your villa in Spain or Greece, designed, permitted, and delivered by Wolfblanc.">Din villa i Spanien och Grekland, designad, tillståndssökt och levererad av Wolfblanc.</p></div>
+        <a href="#kontakt" onclick="ss(event,'kontakt')" class="spec-more"><span data-sv="Kontakta oss" data-en="Contact us">Kontakta oss</span> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+      <div class="spec-card">
+        <div><div class="spec-title" data-sv="VARFÖR WOLFBLANC?" data-en="WHY WOLFBLANC?">VARFÖR WOLFBLANC?</div><p class="spec-desc" data-sv="Vad som skiljer oss från andra arkitektkontor." data-en="What makes us different from other architecture studios.">Vad som skiljer oss från andra arkitektkontor.</p></div>
+        <a href="#om-studion" onclick="ss(event,'om-studion')" class="spec-more"><span data-sv="Om studion" data-en="About the studio">Om studion</span> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Kontakt -->
+<div id="kontakt" class="wrap">
+  <div class="section section-reveal">
+    <span class="eyebrow" data-sv="KONTAKT" data-en="CONTACT">KONTAKT</span>
+    <div class="contact-grid">
+      <div>
+        <div class="contact-label">WOLFBLANC ARCHITECTS</div>
+        <p class="contact-text">
+          Kungsgatan 9, 11143<br>
+          Stockholm, Sverige<br><br>
+          Tel: <a href="tel:+46736566489">+46 73 656 64 89</a>
+        </p>
+      </div>
+      <div>
+        <div class="contact-emails">
+          <a href="mailto:info@wolfblanc.com" class="contact-email">info@wolfblanc.com</a>
+          <a href="mailto:dolores@wolfblanc.com" class="contact-email">dolores@wolfblanc.com</a>
+        </div>
+        <p class="contact-lang" data-sv="Vi svarar på svenska, engelska, spanska och grekiska." data-en="We respond in Swedish, English, Spanish, and Greek.">Vi svarar på svenska, engelska, spanska och grekiska.</p>
+      </div>
+    </div>
+
+    <div class="map-wrap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2034.1!2d18.0632!3d59.3356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d3de8a4a65f%3A0x1!2sKungsgatan+9%2C+11143+Stockholm!5e0!3m2!1ssv!2sse!4v1" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Wolfblanc Architects Stockholm"></iframe>
+    </div>
+
+    <div class="start-project">
+      <h3 data-sv="Starta ditt projekt" data-en="Start your project">Starta ditt projekt</h3>
+      <a href="mailto:dolores@wolfblanc.com" class="btn-outline" data-sv="STARTA DITT PROJEKT" data-en="START YOUR PROJECT">STARTA DITT PROJEKT</a>
+      <p data-sv='Eller kontakta oss direkt på <a href="mailto:dolores@wolfblanc.com">dolores@wolfblanc.com</a>' data-en='Or contact us directly at <a href="mailto:dolores@wolfblanc.com">dolores@wolfblanc.com</a>'>Eller kontakta oss direkt på <a href="mailto:dolores@wolfblanc.com">dolores@wolfblanc.com</a></p>
+      <p class="prefer-international" data-sv='International site: <a href="https://wolfblanc.com" target="_blank" rel="noopener">wolfblanc.com →</a>' data-en='International site: <a href="https://wolfblanc.com" target="_blank" rel="noopener">wolfblanc.com →</a>'>International site: <a href="https://wolfblanc.com" target="_blank" rel="noopener">wolfblanc.com →</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <span data-sv="WOLFBLANC® ARCHITECTS · Stockholm · Sverige · © 2026" data-en="WOLFBLANC® ARCHITECTS · Stockholm · Sweden · © 2026">WOLFBLANC® ARCHITECTS · Stockholm · Sverige · © 2026</span>
+  <a href="https://wolfblanc.com" target="_blank" rel="noopener noreferrer" class="footer-link">wolfblanc.com</a>
+</footer>
+
+<button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Tillbaka till toppen">
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<script>
+  // Theme
+  const H = document.documentElement;
+  let dark = localStorage.getItem('theme') === 'dark';
+  if (dark) applyDark();
+  function applyDark(){ H.classList.add('dark'); show('is'); hide('im'); }
+  function applyLight(){ H.classList.remove('dark'); hide('is'); show('im'); }
+  function show(id){ const e=document.getElementById(id); if(e) e.style.display=''; }
+  function hide(id){ const e=document.getElementById(id); if(e) e.style.display='none'; }
+  function toggleTheme(){ dark=!dark; dark?applyDark():applyLight(); localStorage.setItem('theme',dark?'dark':'light'); }
+
+  // Language
+  const langButtons = document.querySelectorAll('[data-lang-switch]');
+  const heroLines = {
+    sv: ['NORDISK ARKITEKTUR.', 'INTERNATIONELL', 'ERFARENHET.'],
+    en: ['NORDIC ARCHITECTURE.', 'INTERNATIONAL', 'EXPERIENCE.']
+  };
+
+  function renderHero(lang){
+    const h1 = document.getElementById('hero-h1');
+    h1.innerHTML = '';
+    let delay = 0;
+    heroLines[lang].forEach(line => {
+      const span = document.createElement('span');
+      span.style.display = 'block';
+      line.split(' ').forEach(word => {
+        const w = document.createElement('span');
+        w.className = 'word';
+        w.textContent = word;
+        w.style.animationDelay = delay + 's';
+        w.style.marginRight = '.2em';
+        span.appendChild(w);
+        delay += 0.15;
+      });
+      h1.appendChild(span);
+    });
+  }
+
+  function setLanguage(lang){
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-sv][data-en]').forEach(el => {
+      el.innerHTML = el.dataset[lang];
+    });
+    langButtons.forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.langSwitch === lang);
+    });
+    const themeButton = document.querySelector('.theme-btn');
+    if (themeButton) themeButton.setAttribute('aria-label', lang === 'sv' ? 'Byt tema' : 'Toggle theme');
+    const bttButton = document.getElementById('btt');
+    if (bttButton) bttButton.setAttribute('aria-label', lang === 'sv' ? 'Tillbaka till toppen' : 'Back to top');
+    renderHero(lang);
+    localStorage.setItem('wb-se-lang', lang);
+  }
+
+  langButtons.forEach(btn => {
+    btn.addEventListener('click', () => setLanguage(btn.dataset.langSwitch));
+  });
+  setLanguage(localStorage.getItem('wb-se-lang') || 'sv');
+
+  // Smooth scroll
+  function ss(e, id){ e.preventDefault(); const el=document.getElementById(id); if(el) window.scrollTo({top:el.offsetTop-72,behavior:'smooth'}); }
+
+  // Nav scroll + active link
+  const nav = document.getElementById('nav');
+  const btt = document.getElementById('btt');
+  const links = document.querySelectorAll('.nav-link[data-s]');
+  const sids = ['om-studion','tjanster','projekt','process','kontakt'];
+
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    nav.classList.toggle('scrolled', y > 20);
+    btt.classList.toggle('visible', y > 400);
+    for (const id of sids){
+      const el = document.getElementById(id);
+      if (el){ const r = el.getBoundingClientRect(); if(r.top<=100&&r.bottom>=100){ links.forEach(l=>l.classList.toggle('active',l.dataset.s===id)); break; } }
+    }
+  }, {passive:true});
+
+  // Scroll reveal
+  const revealObserver = new IntersectionObserver(entries => {
+    entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+  }, {threshold: 0.1});
+  document.querySelectorAll('.section-reveal').forEach(el => revealObserver.observe(el));
+
+  // Gallery: project data for marquee
+  const projects = [
+    { img:'images/norrsken.jpg', num:'N° 01 / 08', sv:'NORRSKEN',          en:'NORRSKEN',          cat_sv:'Bostadsinteriör',          cat_en:'Residential Interiors' },
+    { img:'images/horizon.jpg',  num:'N° 02 / 08', sv:'HORIZON',           en:'HORIZON',           cat_sv:'Arkitektur & Landskap',    cat_en:'Architecture & Landscape' },
+    { img:'images/axis.jpg',     num:'N° 03 / 08', sv:'AXIS',              en:'AXIS',              cat_sv:'Kommersiell interiör',     cat_en:'Commercial Interiors' },
+    { img:'images/k38.jpg',      num:'N° 04 / 08', sv:'K38',               en:'K38',               cat_sv:'Totalrenovering',          cat_en:'Full Renovation' },
+    { img:'images/k12.jpg',      num:'N° 05 / 08', sv:'K12',               en:'K12',               cat_sv:'Korttidsuthyrning',        cat_en:'Short-term Rental' },
+    { img:'images/boadilla.jpg', num:'N° 06 / 08', sv:'BOADILLA',          en:'BOADILLA',          cat_sv:'Bostadsvilla',             cat_en:'Residential Villa' },
+    { img:'images/granolita.jpg',num:'N° 07 / 08', sv:'GRANOLITA',         en:'GRANOLITA',         cat_sv:'Renovering & Interiör',    cat_en:'Renovation & Interiors' },
+    { img:'images/academy.jpg',  num:'N° 08 / 08', sv:'ACADEMY DISTRICT',  en:'ACADEMY DISTRICT',  cat_sv:'Stadsplanering',           cat_en:'Urban Design' },
+  ];
+
+  // Build marquee items (doubled for seamless loop)
+  (function buildMarquee(){
+    const track = document.getElementById('marquee-track');
+    if (!track) return;
+    const lang = localStorage.getItem('wb-se-lang') || 'sv';
+    const items = [...projects, ...projects]; // duplicate for loop
+    items.forEach(p => {
+      const div = document.createElement('div');
+      div.className = 'marquee-item';
+      div.innerHTML = `
+        <img src="${p.img}" alt="${p[lang]}" loading="lazy">
+        <div class="marquee-label">
+          <div class="marquee-num">${p.num}</div>
+          <div class="marquee-title">${p[lang]}</div>
+          <div class="marquee-cat">${p['cat_' + lang]}</div>
+        </div>`;
+      track.appendChild(div);
+    });
+  })();
+
+  // Gallery mode toggle
+  function setGalleryMode(mode){
+    const stacked = document.getElementById('gallery-stacked');
+    const marquee = document.getElementById('gallery-marquee');
+    const btns = document.querySelectorAll('.gallery-mode-btn');
+    if (mode === 'marquee'){
+      stacked.style.display = 'none';
+      marquee.style.display = 'block';
+      marquee.removeAttribute('aria-hidden');
+    } else {
+      stacked.style.display = 'grid';
+      marquee.style.display = 'none';
+      marquee.setAttribute('aria-hidden','true');
+    }
+    btns.forEach(btn => btn.classList.toggle('active', btn.dataset.mode === mode));
+  }
+
+  // Cursor
+  const dot = document.getElementById('cursor-dot');
+  const ring = document.getElementById('cursor-ring');
+  let mouseX=0, mouseY=0, ringX=0, ringY=0;
+  window.addEventListener('mousemove', e => {
+    mouseX=e.clientX; mouseY=e.clientY;
+    dot.style.left=mouseX+'px';
+    dot.style.top=mouseY+'px';
+  }, {passive:true});
+  (function animateRing(){
+    ringX += (mouseX-ringX)*0.15;
+    ringY += (mouseY-ringY)*0.15;
+    ring.style.left = ringX+'px';
+    ring.style.top  = ringY+'px';
+    requestAnimationFrame(animateRing);
+  })();
+  document.querySelectorAll('a, button').forEach(el => {
+    el.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
+    el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
+  });
+</script>
+</body>
+</html>
